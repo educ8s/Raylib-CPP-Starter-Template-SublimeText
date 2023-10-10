@@ -1,8 +1,7 @@
 #include <raylib.h>
 #include "ball.h"
 
-int main()
-{
+int main() {
     Color darkGreen = Color{20, 160, 133, 255};
 
     int screenWidth = 800;
@@ -13,8 +12,7 @@ int main()
     InitWindow(screenWidth, screenHeight, "My first RAYLIB program!");
     SetTargetFPS(60);
 
-    while (!WindowShouldClose())
-    {
+    while (!WindowShouldClose()) {
         BeginDrawing();
         ClearBackground(darkGreen);
         ball.Update();
